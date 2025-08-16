@@ -9,8 +9,8 @@ _
 ## Examples
 
 - **In Education**:  
-In Education: From UNESCO (2024), there are schools that use AI tutoring systems that modify lessons according to the performance of the student. They also use intelligent tools that suggest the most appropriate learning material for every student, thus every student receives personalized assistance.
+In Education: there are schools that use AI tutoring systems that modify lessons according to the performance of the student. They also use intelligent tools that suggest the most appropriate learning material for every student, thus every student receives personalized assistance.
 
 
   - **Reference**:  
-    UNESCO (2024). “Artificial Intelligence in Education: A Global Perspective.” Retrieved from https://www.unesco.org/reports/ai-education
+   [https://www.unesco.org/reports/ai-education](https://www.unesco.org/en/digital-education/artificial-intelligence)
