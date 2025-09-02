@@ -1,4 +1,4 @@
-import './App.js';
+import './App.css';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           It can also work with my classmates and other people on projects. 
           It can help me create my own portfolio to show my skills. 
           Git & GitHub are common tools used by developers, and learning them 
-          prepares me for real projects and future jobs.
+          prepares me for real projects and future jobs that i might have.
         </p>
       </header>
     </div>
