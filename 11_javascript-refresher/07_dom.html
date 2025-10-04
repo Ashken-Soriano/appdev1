@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to My Interactive Page</h1>
+
+    <!-- Button to change background color -->
+    <button id="colorButton">Change Background Color</button>
+
+    <!-- Paragraph to display favorite color -->
+    <p id="favoriteColor"></p>
+
+    <!-- Paragraph for delayed message -->
+    <p id="delayedMessage"></p>
+
+    <script>
+        // 1. Change background color when button is clicked
+        const button = document.getElementById('colorButton');
+        button.addEventListener('click', function() {
+            const color = prompt("What's your favorite color?");
+            if(color) {
+                document.body.style.backgroundColor = color; // change background
+                document.getElementById('favoriteColor').textContent = 
+                    `Your favorite color is ${color}!`; // show favorite color
+            }
+        });
+
+        // 2. Show message after 2 seconds
+        setTimeout(function() {
+            document.getElementById('delayedMessage').textContent = 
+                "This message appears after 2 seconds";
+        }, 2000);
+    </script>
+</body>
+</html>
