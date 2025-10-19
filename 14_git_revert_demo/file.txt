@@ -1,2 +1,5 @@
 Line 1
 Line 2
+Realization:
+After using git revert, a new commit was created that undid the last changes.
+The previous commits still remain in history, unlike git reset which removes them.
