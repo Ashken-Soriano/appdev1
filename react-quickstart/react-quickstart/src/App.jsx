@@ -4,29 +4,32 @@
 import './App.css'
 
 
+function AdminPanel() {
+  return (
+    <h1>this is admin</h1>
+  )
+}
 
+function LoginForm() {
+  return (
+    <h1>this is a form</h1>
+  )
+}
 
 function App() {
-  const user = {
-  name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90,
-};
+  const isLoggedIn = true;
+    let content;
 
-  // const [count, setCount] = useState(0)
+  if (isLoggedIn) {
+    content = <AdminPanel />;
+  } else {
+    content = <LoginForm />;
+  }
+
   return (
-  <>
-      <h1>{user.name}</h1>
-      <img
-        className="avatar"
-        src={user.imageUrl}
-        alt={'Photo of ' + user.name}
-        style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }}
-      />
-    </>
+    <div>
+      {content}
+    </div>
   );
 }
 
