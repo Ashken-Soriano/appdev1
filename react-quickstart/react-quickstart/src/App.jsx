@@ -3,33 +3,26 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-
-function AdminPanel() {
-  return (
-    <h1>this is admin</h1>
-  )
-}
-
-function LoginForm() {
-  return (
-    <h1>this is a form</h1>
-  )
-}
+const products = [
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
+];
 
 function App() {
-  const isLoggedIn = true;
-    let content;
-
-  if (isLoggedIn) {
-    content = <AdminPanel />;
-  } else {
-    content = <LoginForm />;
-  }
+      const listItems = products.map(product =>
+    <li
+      key={product.id}
+      style={{
+        color: product.isFruit ? 'magenta' : 'darkgreen'
+      }}
+    >
+      {product.title}
+    </li>
+  );
 
   return (
-    <div>
-      {content}
-    </div>
+    <ul>{listItems}</ul>
   );
 }
 
