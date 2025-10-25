@@ -1,18 +1,12 @@
-function Friend({ name }) {
-  return <li>{name}</li>;
+function Counter({ clicks }) {
+  return <p>Clicked {clicks} times</p>;
 }
 
 export default function App() {
-  const friends = ["Liam", "Noah", "Emma", "Olivia"];
-
   return (
     <div>
-      <h2>Friends List</h2>
-      <ul>
-        {friends.map((friend) => (
-          <Friend key={friend} name={friend} />
-        ))}
-      </ul>
+      <Counter clicks={1} />
+      <Counter clicks={2} />
     </div>
   );
 }
