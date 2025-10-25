@@ -1,9 +1,12 @@
-import { Greeting } from "./components/Greeting";
-
 export default function App() {
   return (
     <div>
-      <Greeting />
+      <h1>My Favorite Foods</h1>
+      <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Adobo</li>
+      </ul>
     </div>
   );
 }
