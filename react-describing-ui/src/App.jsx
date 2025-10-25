@@ -1,11 +1,9 @@
-function Welcome() {
-  return <h1>Hello, React!</h1>;
-}
+import { Greeting } from "./components/Greeting";
 
 export default function App() {
   return (
     <div>
-      <Welcome />
+      <Greeting />
     </div>
   );
 }
