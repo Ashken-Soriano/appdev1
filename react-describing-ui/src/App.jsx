@@ -1,12 +1,10 @@
+import { UserInfo } from "./components/UserInfo";
+
 export default function App() {
   return (
     <div>
-      <h1>My Favorite Foods</h1>
-      <ul>
-        <li>Pizza</li>
-        <li>Burger</li>
-        <li>Adobo</li>
-      </ul>
+      <UserInfo name="Ashken" age={18} />
+      <UserInfo name="Louie" age={20} />
     </div>
   );
 }
