@@ -1,10 +1,9 @@
-import { UserInfo } from "./components/UserInfo";
-
 export default function App() {
+  const isLoggedIn = false;
+
   return (
     <div>
-      <UserInfo name="Ashken" age={18} />
-      <UserInfo name="Louie" age={20} />
+      {isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in.</h1>}
     </div>
   );
 }
