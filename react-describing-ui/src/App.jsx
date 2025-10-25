@@ -1,12 +1,21 @@
-function Counter({ clicks }) {
-  return <p>Clicked {clicks} times</p>;
+function Avatar({ name }) {
+  return <img src={`https://robohash.org/${name}.png`} alt={name} />;
+}
+
+function Profile({ name }) {
+  return (
+    <div>
+      <Avatar name={name} />
+      <p>{name}</p>
+    </div>
+  );
 }
 
 export default function App() {
   return (
     <div>
-      <Counter clicks={1} />
-      <Counter clicks={2} />
+      <Profile name="Ashken" />
+      <Profile name="Louie" />
     </div>
   );
 }
