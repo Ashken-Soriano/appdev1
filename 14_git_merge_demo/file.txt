@@ -1,3 +1,0 @@
-Realization:
-After merging, both main and feature branches' histories were combined.
-Unlike rebase, merge keeps the original branch structure visible in the history.

@@ -1,5 +1,0 @@
-Line 1
-
-Realization:
-After git reset --hard to the 'Add Line 1' commit, the file and branch history reverted to that commit.
-The later commits ('Add Line 2' and 'Add Line 3') are no longer in the branch history and the file shows only 'Line 1'.

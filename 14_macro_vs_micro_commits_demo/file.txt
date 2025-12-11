@@ -1,1 +1,0 @@
-Realization: After switching from macro to micro commits, the history is clearer and easier to understand. Each commit represents one logical change, making it easier to track and debug.
