@@ -1,21 +1,13 @@
 // src/App.jsx
-const user = {
-  name: 'Gregorio Y. Zara',
-  imageUrl: 'https://i.imgur.com/QIrZWGIs.jpg',
-};
-
-export default function Profile() {
+export default function TodoList() {
   return (
-    <div>
-      {/* curly braces for dynamic text */}
-      <h1>{user.name}'s Profile</h1>
-
-      {/* curly braces for dynamic attribute values */}
+    <div style={{ backgroundColor: 'black', color: 'pink' }}>
+      <h1>Hedy Lamarr's To Do List</h1>
       <img
-        src={user.imageUrl}
-        alt={user.name}
+        className="avatar"
+        src="https://i.imgur.com/yXOvdOSs.jpg"
+        alt="Hedy Lamarr"
       />
-
     </div>
   );
 }
